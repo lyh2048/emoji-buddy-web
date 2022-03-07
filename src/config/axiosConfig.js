@@ -2,7 +2,7 @@ import axios from "axios";
 
 // 根据环境设定请求后端 url 地址
 axios.defaults.baseURL = process.env.NODE_ENV === 'production' ?
-    'http://www.liuyuhe.xyz:9000/api' : 'http://localhost:9000/api';
+    'https://www.liuyuhe.xyz:9443/api' : 'http://localhost:9000/api';
 
 // 添加请求拦截器
 axios.interceptors.request.use(function (config) {
