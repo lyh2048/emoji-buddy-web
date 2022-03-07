@@ -16,7 +16,7 @@
         </a-tabs>
       </a-col>
     </a-row>
-    <a-list :grid="{ gutter: 16, column: 6 }" :data-source="pictureList">
+    <a-list :grid="{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }" :data-source="pictureList">
       <template slot="renderItem" slot-scope="item">
         <a-list-item>
           <a-skeleton active :loading="loading" :avatar="{shape: 'square', size: 200}">
@@ -107,7 +107,8 @@ export default {
 
 <style scoped>
 .picture {
-  width: 188px;
+  max-width: 200px;
   height: 200px;
+  text-align: center;
 }
 </style>
